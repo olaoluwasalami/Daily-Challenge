@@ -1,0 +1,30 @@
+/*Challenge
+1. Create a page with a set of 3 paragraph tags
+2.  Then create a function that changes the values of the paragraphs content using DOM manipulation to:
+     1. Function was called for the first paragraph , 2. Function was called for the second paragraph  and 3. Function was called for the third paragraph.
+3. Then call the function in the script such that when the page loads the manipulation occurs. */
+
+<!DOCTYPE html>
+<html>
+<head>
+	<script type="text/javascript"></script>
+	<title> DOM manipulation</title>
+</head>
+<p id="one"> </p>
+<p id="two"></p>
+<p id="three"> </p>
+<body>
+<script>
+	var x = document.getElementById('one');
+	var y = document.getElementById('two');
+	var z = document.getElementById('three');
+
+
+window.onload= function change() {
+	(x).innerHTML = "Function was called";
+	(y).innerHTML = "Function was called";
+	(z).innerHTML = "Function was called";
+}
+</script>
+</body>
+</html>
